@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CIDashboard/bin
+/CIDashboard/obj/Debug
+/CIDashboard.Observer/bin/Debug
+/CIDashboard.Observer/obj/Debug
+/packages
