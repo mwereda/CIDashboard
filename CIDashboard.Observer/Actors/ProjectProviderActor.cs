@@ -18,7 +18,7 @@ namespace CIDashboard.Observer.Actors
 
             this.actorSystem = actorSystem;
         }
-
+        
         protected override void OnReceive(object message)
         {
             var filePath = message as string;
@@ -30,7 +30,7 @@ namespace CIDashboard.Observer.Actors
                 projects.ForEach(x =>
                 {
                     var observerActor = this.actorSystem.ActorOf(Props.Create<ObserverActor>());
-                    observerActor.Tell(new ObserveMessage(x));
+                    observerActor.Tell(new ObserveMessage(x), Self);
                 });
             }
             else

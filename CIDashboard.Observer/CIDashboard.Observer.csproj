@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actors\Messages\ObserveMessage.cs" />
+    <Compile Include="Actors\Messages\StopObservingMessage.cs" />
     <Compile Include="Actors\ObserverActor.cs" />
     <Compile Include="IDataRefresher.cs" />
     <Compile Include="Observer.cs" />
